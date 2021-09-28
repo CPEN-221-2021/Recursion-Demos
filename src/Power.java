@@ -1,3 +1,7 @@
+/**
+ * @author Mohammad Shahrad
+ */
+
 public class Power {
 
     public Power(){
