@@ -27,12 +27,12 @@ public class Fibonacci {
             System.out.println( "RunFibonacciRecursive("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
 
             startTime = System.nanoTime();
-            output = RunFibonacciRecursiveDP(input);
+            output = RunFibonacciRecursiveMem(input);
             endTime = System.nanoTime();
             System.out.println( "RunFibonacciRecursiveDP("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
 
             startTime = System.nanoTime();
-            output = RunFibonacciRecursiveDP(input);
+            output = RunFibonacciRecursiveMem(input);
             endTime = System.nanoTime();
             System.out.println( "2nd RunFibonacciRecursiveDP("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
 
@@ -69,7 +69,7 @@ public class Fibonacci {
         }
     }
 
-    public long RunFibonacciRecursiveDP (int n){
+    public long RunFibonacciRecursiveMem (int n){
         if (cache.containsKey(n)){  // check if we had calculated it before
             return cache.get(n);
         }
