@@ -59,7 +59,7 @@ public class Power {
         if (n==1){
             return x;
         }
-        double partialRes = Power2(x, n>>1);
+        double partialRes = Power2(x, n>>1); // n>>1 means right-shifting by 1, which is division by two
         if (n%2==0){
             return partialRes * partialRes;
         } else {

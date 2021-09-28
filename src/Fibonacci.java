@@ -27,12 +27,11 @@ public class Fibonacci {
             startTime = System.nanoTime();
             output = RunFibonacciRecursiveMem(input);
             endTime = System.nanoTime();
-            System.out.println( "RunFibonacciRecursiveDP("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
-
+            System.out.println( "RunFibonacciRecursiveMem("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
             startTime = System.nanoTime();
             output = RunFibonacciRecursiveMem(input);
             endTime = System.nanoTime();
-            System.out.println( "2nd RunFibonacciRecursiveDP("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
+            System.out.println( "2nd RunFibonacciRecursiveMem("+input+") = "+output+", duration (us): "+(endTime-startTime)/1000 );
 
             cache.clear();
             System.out.println( "------------------------------" );
